@@ -60,24 +60,23 @@ document.onmouseup = mousehandler;
             <canvas id="dummy" width=0 height=0></canvas>
             <div class="bar">
                 <div class="range">
-                    <span class="range-val-wrapper">scale: <span id="scale-val"></span> ( <span class="range-val"></span>% of the face length )</span>
+                  <span class="range-val-wrapper">Skala<span id="scale-val"></span><span class="range-val"></span></span>
                     <input id="scale" type="range" min="0" max="20" value="10">
                 </div>
                 <div class="range">
-                    <span class="range-val-wrapper">margin-top: scale * <span class="range-val"></span></span>
+                    <span class="range-val-wrapper">margin-atas <span class="range-val"></span></span>
                     <input id="margin_of_top_scale" type="range" min="0" max="10" value="5">
                 </div>
                 <div class="range">
-                    <span class="range-val-wrapper">margin-bottom: scale * <span class="range-val"></span></span>
+                    <span class="range-val-wrapper">margin-bawah <span class="range-val"></span></span>
                     <input id="margin_of_bottom_scale" type="range" min="0" max="20" value="6">
                 </div>
-                <!-- 前面カメラの場合、transform: scaleX(-1); により left -> right, right -> left に逆転 -->
                 <div class="range">
-                    <span class="range-val-wrapper"><span id="range-margin-right">margin-right</span>: scale * <span class="range-val"></span></span>
+                    <span class="range-val-wrapper"><span id="range-margin-right">margin-kanan</span>: scale * <span class="range-val"></span></span>
                     <input id="margin_of_right_scale" type="range" min="0" max="20" value="4">
                 </div>
                 <div class="range">
-                    <span class="range-val-wrapper"><span id="range-margin-left">margin-left</span>: scale * <span class="range-val"></span></span>
+                    <span class="range-val-wrapper"><span id="range-margin-left">margin-kiri</span>: scale * <span class="range-val"></span></span>
                     <input id="margin_of_left_scale" type="range" min="0" max="10" value="2">
                 </div>
             </div>
